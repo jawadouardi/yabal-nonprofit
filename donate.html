@@ -87,7 +87,7 @@
         <div class="form-group">
           <input type="number" id="customAmount" placeholder="Or enter custom amount (EUR)" min="1" style="text-align:center">
         </div>
-        <a href="mailto:info@yabal.be?subject=One-Time Donation&body=I would like to make a one-time donation of EUR [amount] to Y'abal ASBL. Please provide me with payment details." class="btn btn-primary" style="width:100%;text-align:center;display:block" id="donateBtn">Donate €50 Now</a>
+        <a href="mailto:ouajoa2@gmail.com?subject=One-Time Donation&body=I would like to make a one-time donation of EUR [amount] to Y'abal ASBL. Please provide me with payment details." class="btn btn-primary" style="width:100%;text-align:center;display:block" id="donateBtn">Donate €50 Now</a>
         <p style="font-size:0.85rem;color:var(--text-light);margin-top:1rem;margin-bottom:0">Secure donation. Tax-deductible in Belgium.</p>
       </div>
       <div class="donate-card">
@@ -104,7 +104,7 @@
         <div class="form-group">
           <input type="number" id="customMonthly" placeholder="Or enter custom amount (EUR)" min="1" style="text-align:center">
         </div>
-        <a href="mailto:info@yabal.be?subject=Monthly Donation&body=I would like to set up a monthly donation of EUR [amount] to Y'abal ASBL. Please provide me with payment details." class="btn btn-green" style="width:100%;text-align:center;display:block" id="monthlyBtn">Donate €25/Month</a>
+        <a href="mailto:ouajoa2@gmail.com?subject=Monthly Donation&body=I would like to set up a monthly donation of EUR [amount] to Y'abal ASBL. Please provide me with payment details." class="btn btn-green" style="width:100%;text-align:center;display:block" id="monthlyBtn">Donate €25/Month</a>
         <p style="font-size:0.85rem;color:var(--text-light);margin-top:1rem;margin-bottom:0">Monthly donors receive quarterly impact updates.</p>
       </div>
     </div>
@@ -121,7 +121,7 @@
       <div class="card">
         <div class="card-icon card-icon-green">🏦</div>
         <h3>Bank Transfer</h3>
-        <p>Make a direct bank transfer to our account. Contact us at <a href="mailto:info@yabal.be">info@yabal.be</a> to receive our bank details and a donation form.</p>
+        <p>Make a direct bank transfer to our account. Contact us at <a href="mailto:ouajoa2@gmail.com">ouajoa2@gmail.com</a> to receive our bank details and a donation form.</p>
       </div>
       <div class="card">
         <div class="card-icon card-icon-gold">🏢</div>
@@ -156,7 +156,7 @@
       <div class="card">
         <h3>Tax Benefits</h3>
         <p>Y'abal is a registered Belgian ASBL (non-profit organisation). Depending on your jurisdiction, donations to Y'abal may be tax-deductible. Belgian taxpayers can benefit from the tax reduction system for donations to recognised non-profit organisations.</p>
-        <p style="margin-bottom:0">For more information about tax-deductible donations, please contact us at <a href="mailto:info@yabal.be">info@yabal.be</a>.</p>
+        <p style="margin-bottom:0">For more information about tax-deductible donations, please contact us at <a href="mailto:ouajoa2@gmail.com">ouajoa2@gmail.com</a>.</p>
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@
     <h2>Every Contribution Counts</h2>
     <p>No matter the size, your donation helps us create meaningful, lasting change for people who need it most.</p>
     <div class="hero-btns">
-      <a href="mailto:info@yabal.be?subject=Donation Inquiry" class="btn btn-primary">Donate Now</a>
+      <a href="mailto:ouajoa2@gmail.com?subject=Donation Inquiry" class="btn btn-primary">Donate Now</a>
       <a href="contact.html" class="btn btn-white">Have Questions? Contact Us</a>
     </div>
   </div>
@@ -202,7 +202,7 @@
       <ul class="footer-links">
         <li>Villerspark 4/6</li>
         <li>3500 Hasselt, Belgium</li>
-        <li><a href="mailto:info@yabal.be">info@yabal.be</a></li>
+        <li><a href="mailto:ouajoa2@gmail.com">ouajoa2@gmail.com</a></li>
         <li><a href="tel:+32470123456">+32 470 12 34 56</a></li>
       </ul>
     </div>
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.add('selected');
         selected = parseInt(this.dataset.amount);
         btn.textContent = 'Donate \u20AC' + selected + (prefix === 'monthly' ? '/Month' : ' Now');
-        btn.href = 'mailto:info@yabal.be?subject=' + encodeURIComponent(prefix === 'monthly' ? 'Monthly Donation' : 'One-Time Donation') + '&body=' + encodeURIComponent('I would like to make a ' + (prefix === 'monthly' ? 'monthly' : 'one-time') + ' donation of EUR ' + selected + ' to Y\'abal ASBL. Please provide me with payment details.');
+        btn.href = 'mailto:ouajoa2@gmail.com?subject=' + encodeURIComponent(prefix === 'monthly' ? 'Monthly Donation' : 'One-Time Donation') + '&body=' + encodeURIComponent('I would like to make a ' + (prefix === 'monthly' ? 'monthly' : 'one-time') + ' donation of EUR ' + selected + ' to Y\'abal ASBL. Please provide me with payment details.');
       });
     });
     var custom = container.parentElement.querySelector('input[type=number]');
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
           selected = parseInt(this.value);
           container.querySelectorAll('.donate-amount').forEach(e => e.classList.remove('selected'));
           btn.textContent = 'Donate \u20AC' + selected + (prefix === 'monthly' ? '/Month' : ' Now');
-          btn.href = 'mailto:info@yabal.be?subject=' + encodeURIComponent(prefix === 'monthly' ? 'Monthly Donation' : 'One-Time Donation') + '&body=' + encodeURIComponent('I would like to make a ' + (prefix === 'monthly' ? 'monthly' : 'one-time') + ' donation of EUR ' + selected + ' to Y\'abal ASBL. Please provide me with payment details.');
+          btn.href = 'mailto:ouajoa2@gmail.com?subject=' + encodeURIComponent(prefix === 'monthly' ? 'Monthly Donation' : 'One-Time Donation') + '&body=' + encodeURIComponent('I would like to make a ' + (prefix === 'monthly' ? 'monthly' : 'one-time') + ' donation of EUR ' + selected + ' to Y\'abal ASBL. Please provide me with payment details.');
         }
       });
     }
