@@ -56,7 +56,7 @@ const footerHTML = `
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2024 Y'abal ASBL. All rights reserved. Belgian Enterprise Number: 0665.759.401</p>
+    <p>&copy; 2025 Y'abal ASBL. All rights reserved. Belgian Enterprise Number: 0665.759.401</p>
     <p><a href="privacy-policy.html">Privacy Policy</a></p>
   </div>
 </footer>`;
